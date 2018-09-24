@@ -1,0 +1,79 @@
+<%- include partial/head.ejs %>
+
+<section id="home">
+  <h1 class="title">Home - Simple Express Template</h1>
+  <h2 class="title">Say my name, say my naaaame ( === <b><%= nom %></b> ))</h2>
+  <h3 class="title">TP Intro</h3>
+  <p>
+    Faire une courte <b>veille</b> sur les moteurs de template.<br>
+    Installer ejs (http://ejs.co/) dans un projet à part pour tester.<br>
+    Suivre la section "get started" de la doc officielle.
+  </p>
+  <h3 class="title">TP front</h3>
+  <p>
+    Intégrer un plugin jQuery de type slideshow.<br>
+    <b>Conseil</b>: choisir une solution bien documentée.
+  </p>
+  <hr>
+  <h3 class="title">TP back (en option)</h3>
+  <p>
+    Trouver et importer une base de données des pays du monde au format SQL (... ou JSON à convertir :D ).<br> Contrainte : la clé primaire (id) doit être numérique (ça ne devrait pas poser problème).<br> Utiliser phpMyAdmin pour modifier la table user.<br> Sa clé étrangère doit pointer vers le bonne colonne de la table country.
+  </p>
+
+  <!-- <ul class="rslides">
+      <li><img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?cs=srgb&dl=beach-exotic-holiday-248797.jpg&fm=jpg" alt=""></li>
+      <li><img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg" alt=""></li>
+      <li><img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?cs=srgb&dl=autumn-colorful-colourful-33109.jpg&fm=jpg" alt=""></li>
+      <li><img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?cs=srgb&dl=cascade-clouds-cool-wallpaper-210186.jpg&fm=jpg" alt=""></li>
+      <li><img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?cs=srgb&dl=beautiful-blur-bright-326055.jpg&fm=jpg" alt=""></li>
+  </ul> -->
+
+  <div class="slider" id="slider">
+		<div class="slItems">
+			<div class="slItem" style="background-image: url('https://unsplash.it/1920/1080?image=990');">
+				<div class="slText">
+					jQuery Slider.js Backgounrd Carousel Example
+				</div>
+			</div>
+			<div class="slItem" style="background-image: url('https://unsplash.it/1920/1080?image=976');">
+				<div class="slText">
+					Praesent consequat sapien ut dui hendrerit imperdiet. Donec tincidunt risus et semper accumsan. 
+				</div>
+			</div>
+			<div class="slItem" style="background-image: url('https://unsplash.it/1920/1080?image=950');">
+				<div class="slText">
+					Morbi aliquam tristique rutrum. Donec pretium urna vel lectus eleifend, non condimentum enim fermentum. Ut blandit interdum quam ac consequat.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	$(function(){
+		$('#slider').rbtSlider({
+			height: '100vh', 
+			'dots': true,
+			'arrows': true,
+			'auto': 3
+		});
+	});
+	</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</section>
+
+
+<%- include partial/footer.ejs %>

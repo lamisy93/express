@@ -1,0 +1,53 @@
+<%- include partial/head.ejs %>
+
+<section id="bill">
+  <h1 class="title">Contact</h1>
+  <h2 class="title">TP Front</h2>
+  <p>
+    Coder un formulaire de contact.
+  </p>
+  <hr>
+  <h2 class="title">TP back</h2>
+  <p>
+    Intégrer la lib nodemailer à l'application.
+  </p>
+</section>
+
+  <div id="global">
+
+    <form id="formContact" action="">
+        <!-- <h2 class="form">Civilité</h2>
+        <div id="homme">
+            <input type="radio" id="homme" name="homme"/>
+            <label for="homme">Homme</label>
+        </div>
+        <div id="femme">
+            <input type="radio" id="femme" name="femme"/>
+            <label for="femme">Femme</label>
+        </div> -->
+        <h2 class="form">Nom</h2>
+        <input for="nom" name="nom" type="text" id="nom" placeholder="Nom">
+        <h2 class="form">Prenom</h2>
+        <input for="prenom" name="prenom" type="text" id="prenom" placeholder="Prenom">
+        <h2 class="form">Adresse mail</h2>
+        <input for="email" name="email" type="text" id="email" placeholder="Email">
+        <!-- <h2>N°</h2>
+        <input for="Adresse" name="Adresse" type="number" id="numero">
+        <h2>Rue</h2>
+        <input for="Adresse" name="Adresse" type="text" id="rue">
+        <h2>Code postal</h2>
+        <input for="postcode" name="postcode" type="number" id="message">
+        <h2>Ville</h2>
+        <input for="city" name="city" type="text" id="ville">
+        <h2>Telephone</h2>
+        <input for="number" name="number" type="number" id="telephone"> -->
+        <h2 class="form">Objet</h2>
+        <input for="objet" name="objet" type="text" id="objet" placeholder="Objet du message">
+        <h2 class="form">Message</h2>
+        <textarea for="message" name="message" id="message" cols="30" rows="10"></textarea>
+        <input id="submit" type="submit" value="submit">
+    </form>
+
+  </div>
+
+<%- include partial/footer.ejs %>
